@@ -103,7 +103,7 @@ Design will not earn you points for this assignment thoug you may certainly incl
     * `SI364midterm.py`
     * A `templates/` directory with a file `base.html` and `name_example.html` plus the others you have created inside it
 * Create a GitHub account called `364W18midterm` on your GitHub account. (You are NOT forking and cloning anything this time, you are creating your own repo from start to finish.)
-    * Invite users `aerenchyma` (Jackie or `jczetta@umich.edu`), `pandeymauli` (Mauli, or `maupande@umich.edu`) and `Watel` (Sonakshi, or `sonakshi@umich.edu`) as collaborators on the repository. [Here's how to add a collaborator to a repository](https://www.dropbox.com/s/d6btsfxgh6z84bx/Screenshot%202018-02-13%2021.32.11.png?dl=0).
+    * Invite users `aerenchyma` (Jackie), `pandeymauli` (Mauli) and `Watel` (Sonakshi, or `sonakshi@umich.edu`) as collaborators on the repository. [Here's how to add a collaborator to a repository](https://www.dropbox.com/s/d6btsfxgh6z84bx/Screenshot%202018-02-13%2021.32.11.png?dl=0).
 * Submit the *link* to your GitHub repository to the **SI 364 Midterm** assignment on our Canvas site. The link should be of the form: `https://github.com/YOURGITHUBUSERNAME/364midterm` (if it doesn't look like that, you are probably linking to something specific *inside* the repo, so make sure it does look like that).
 
 All set!
