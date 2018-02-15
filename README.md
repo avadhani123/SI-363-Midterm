@@ -62,7 +62,7 @@ Design will not earn you points for this assignment thoug you may certainly incl
 
 * **Note:** See **To Submit** for submission instructions.
 * Create a `README.md` file for your app that includes the full list of requirements from this page. The ones you have completed should be bolded. (You bold things in Markdown by using two asterisks, like this: `**This text would be bold** and this text would not be`)
-* The `README.md` file should include a list of all of the routes that exist in the app and the names of the templates each one should render (e.g. `/form` -> `form.html`, like the list we provided in the instructions for HW2).
+* The `README.md` file should include a list of all of the routes that exist in the app and the names of the templates each one should render (e.g. `/form` -> `form.html`, like [the list we provided in the instructions for HW2](https://www.dropbox.com/s/3a83ykoz79tqn8r/Screenshot%202018-02-15%2013.27.52.png?dl=0)).
 * The `README.md` file should contain at least 1 line of description of what your app is about or should do.
 
 #### Code Requirements
@@ -70,7 +70,7 @@ Design will not earn you points for this assignment thoug you may certainly incl
 **Note that many of these requirements go together!**
 
 - [ ] Ensure that the `SI364midterm.py` file has all the setup (`app.config` values, import statements, code to run the app if that file is run, etc) necessary to run the Flask application, and the application runs correctly on `http://localhost:5000` (and the other routes you set up)
-- [ ] Add navigation in `base.html` with links (using `a href` tags) that lead to every other viewable page in the application. (e.g. in the lecture examples from the Feb 9 lecture, [like this](url.com) )
+- [ ] Add navigation in `base.html` with links (using `a href` tags) that lead to every other viewable page in the application. (e.g. in the lecture examples from the Feb 9 lecture, [like this](https://www.dropbox.com/s/hjcls4cfdkqwy84/Screenshot%202018-02-15%2013.26.32.png?dl=0) )
 - [ ] Ensure that all templates in the application inherit (using template inheritance, with `extends`) from `base.html` and include at least one additional `block`.
 - [ ] Include at least 2 additional template `.html` files we did not provide.
 - [ ] At least one additional template with a Jinja template for loop and at least one additional template with a Jinja template conditional.
