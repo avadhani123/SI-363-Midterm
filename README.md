@@ -36,7 +36,7 @@ If you use any code from the internet or directly from class, you must cite it. 
 
 ## Instructions
 
-We have provided a `.zip` file on Canvas (in the directory **Files > Midterm Assignment**) called `SI364midterm.zip`. This contains the file `SI364midterm.py` that includes some view functions, some models, some setup code, some comments to indicate what you may need to add and how to organize your code, and a `templates` directory with 2 templates inside. It does NOT include all of the setup code necessary for an app to run.
+We have provided a `.zip` file on Canvas (in the directory **Files > Midterm Assignment**) called `SI364midterm.zip`. This contains the file `SI364midterm.py` that includes some view functions, some models, some setup code, some comments to indicate what you may need to add and how to organize your code, a `templates` directory with 2 templates inside, and a sample `README.md` template. The `SI364midterm.py` file does NOT include all of the setup code necessary for an app to run.
 
 You should add to the `SI364midterm.py` file and the `templates/` files to accumulate points, to fulfill the requirements listed below.
 
@@ -75,19 +75,19 @@ Design will not earn you points for this assignment thoug you may certainly incl
 - [ ] Include at least 2 additional template `.html` files we did not provide.
 - [ ] At least one additional template with a Jinja template for loop and at least one additional template with a Jinja template conditional.
     - These could be in the same template, and could be 1 of the 2 additional template files.
-- [ ] At least 2 dynamic links (with `a href` tags) that send data to a page based on the URL (like the links to info shown about Kendrick Lamar and Solange in HW2).
+- [ ] At least one errorhandler for a 404 error and a corresponding template.
 - [ ] At least one request to a REST API that is based on data submitted in a WTForm.
 - [ ] At least one additional (not provided) WTForm that sends data with a `GET` request to a new page.
 - [ ] At least one additional (not provided) WTForm that sends data with a `POST` request to the *same* page.
 - [ ] At least one custom validator for a field in a WTForm.
 - [ ] At least 2 additional model classes.
 - [ ] Have a one:many relationship that works properly built between 2 of your models.
-- [ ] Successfully save data to each table your models define in at least one view function.
-- [ ] Successfully uery data from each of your models in a view function (so query at least one column, or all data, from every database table you have a model for).
+- [ ] Successfully save data to each table.
+- [ ] Successfully query data from each of your models (so query at least one column, or all data, from every database table you have a model for).
 - [ ] Query data using an `.all()` method in at least one view function and send the results of that query to a template.
-- [ ] Include at least one use of `redirect`.
-- [ ] Include at least one use of `url_for`.
-- [ ] Have at least 3 additional view functions that are not included with the code we have provided. (But you may have more! *Make sure you include ALL view functions in the app in the documentation and ALL pages in the app in the navigation links of `base.html`.*)
+- [ ] Include at least one use of `redirect`. (HINT: This should probably happen in the view function where data is posted...)
+- [ ] Include at least one use of `url_for`. (HINT: This could happen where you render a form...)
+- [ ] Have at least 3 view functions that are not included with the code we have provided. (But you may have more! *Make sure you include ALL view functions in the app in the documentation and ALL pages in the app in the navigation links of `base.html`.*)
 
 ### Additional Requirements for an additional 200 points (to reach 100%) -- an app with extra functionality!
 
