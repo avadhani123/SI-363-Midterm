@@ -32,21 +32,27 @@ You may, of course, talk with any instructors, post (without showing your code) 
 
 If you use any code from the internet or directly from class, you must cite it. **You CANNOT fulfill _creative_ requirements for this assignment (e.g. defining a complete view function) with any code that comes from lecture, section, the internet, a friend, or a previous assignment,** although if you include it AND cite it (see syllabus for how), that's OK, it just won't count for points.
 
-(Setup code, like `app.config` settings, is always approximately the same and will not vary much, if it all. You do not have to cite that but do need to make sure you have what you need!)
+(Setup code, like `app.config` settings, is always approximately the same and will not vary much from one person to another, if it all. You do not have to cite that, but you do need to make sure you have what you need!)
 
-## Specific instructions
+## Instructions
 
-We have provided a `.zip` file on Canvas (in the directory **Files > Midterm Assignment**) called `SI364midterm.zip`. This contains the file `SI364midterm.py` that includes some view functions, some models, some setup code. It does NOT include all of the setup code necessary for an app to run. It also contains a `templates` directory with 2 templates inside.
+We have provided a `.zip` file on Canvas (in the directory **Files > Midterm Assignment**) called `SI364midterm.zip`. This contains the file `SI364midterm.py` that includes some view functions, some models, some setup code, some comments to indicate what you may need to add and how to organize your code, and a `templates` directory with 2 templates inside. It does NOT include all of the setup code necessary for an app to run.
 
-You should add the requirements below to the `SI364midterm.py` file and the `templates/` files to accumulate points. (Note that some requirements are dependent upon another one being completed successfully, as in all applications!)
+You should add to the `SI364midterm.py` file and the `templates/` files to accumulate points, to fulfill the requirements listed below.
+
+Note that some requirements are dependent upon another one being completed successfully, as in all applications!
 
 The code we have provided is fairly basic, in that it could apply to any subject or theme. Everything else you can fill in for this midterm assignment may be of any theme or any subject you want, and involve any data (as long as it is appropriate to share with our whole class, and does not include any discriminatory content).
 
 You may *not* earn any points for making a request to the iTunes API since we have used it so many times in class. You *may* use any other REST API, as long as you do not use code that is exactly the same as code used in lecture or section or a previous HW. (So your use of an API you've seen before must be *different* from anything we have done in class!)
 
-*You must fulfill all of the requirements for the corresponding points. It is not enough to decide that the app you want to write does not have that type of feature -- the midterm assignment requires fulfilling all of these things, so make your plan accordingly.*
+*It is not enough to decide that the app you want to write does not have that type of feature -- the midterm assignment requires fulfilling all of these things for the credit that goes with them, so make your plan accordingly.*
 
-**HINT:** Reading code you have been given already, written already, and looking at examples from lecture, section, and past HW is one of the best ways to approach this. While you can't use the code directly, it can answer a lot of possible questions and provide great examples!
+Reading code you have been given already, written already, and looking at examples from lecture, section, and past HW is one of the *best* ways to approach this. While you can't use the code directly, it can answer a lot of possible questions and provide great examples!
+
+I recommend writing an outline of your documentation first, and then writing a lot of comments in your `SI364midterm.py` file to subsequently translate into code.
+
+Design will not earn you points for this assignment thoug you may certainly include it if you want -- do not prioritize it over the functionality, which is what this midterm assignment is about.
 
 ### Requirements to complete for 1800 points (90%) -- an awesome, solid app
 
@@ -63,24 +69,25 @@ You may *not* earn any points for making a request to the iTunes API since we ha
 
 **Note that many of these requirements go together!**
 
-* Add navigation in `base.html` with links (using `a href` tags) to every other viewable page in the application. (e.g. in the lecture examples from the Feb 9 lecture.)
-* Ensure that all templates in the application inherit (using template inheritance, with `extends`) from `base.html` and include at least one additional `block`.
-* Include at least 2 additional template `.html` files we did not provide.
-* At least one additional template with a Jinja template for loop and at least one additional template with a Jinja template conditional.
-    * These could be in the same template, and could be 1 of the 2 additional template files.
-* At least 2 dynamic links (with `a href` tags) that send data to a page based on the URL (like the links to info shown about Kendrick Lamar and Solange in HW2).
-* At least one request to a REST API that is based on data submitted in a WTForm.
-* At least one additional (not provided) WTForm that sends data with a `GET` request to a new page.
-* At least one additional (not provided) WTForm that sends data with a `POST` request to the *same* page.
-* At least one custom validator for a field in a WTForm.
-* At least 2 additional model classes.
-* Have a one:many relationship that works properly built between 2 of your models.
-* Successfully save data to each table your models define in at least one view function.
-* Successfully uery data from each of your models in a view function (so query at least one column, or all data, from every database table you have a model for).
-* Query data using an `.all()` method in at least one view function and send the results of that query to a template.
-* Include at least one use of `redirect`.
-* Include at least one use of `url_for`.
-* Have at least 3 additional view functions that are not included with the code we have provided. (But you may have more! *Make sure you include ALL view functions in the app in the documentation and ALL pages in the app in the navigation links of `base.html`.*)
+- [ ] Ensure that the `SI364midterm.py` file has all the setup (`app.config` values, import statements, code to run the app if that file is run, etc) necessary to run the Flask application, and the application runs correctly on `http://localhost:5000` (and the other routes you set up)
+- [ ] Add navigation in `base.html` with links (using `a href` tags) that lead to every other viewable page in the application. (e.g. in the lecture examples from the Feb 9 lecture, [like this](url.com) )
+- [ ] Ensure that all templates in the application inherit (using template inheritance, with `extends`) from `base.html` and include at least one additional `block`.
+- [ ] Include at least 2 additional template `.html` files we did not provide.
+- [ ] At least one additional template with a Jinja template for loop and at least one additional template with a Jinja template conditional.
+    - These could be in the same template, and could be 1 of the 2 additional template files.
+- [ ] At least 2 dynamic links (with `a href` tags) that send data to a page based on the URL (like the links to info shown about Kendrick Lamar and Solange in HW2).
+- [ ] At least one request to a REST API that is based on data submitted in a WTForm.
+- [ ] At least one additional (not provided) WTForm that sends data with a `GET` request to a new page.
+- [ ] At least one additional (not provided) WTForm that sends data with a `POST` request to the *same* page.
+- [ ] At least one custom validator for a field in a WTForm.
+- [ ] At least 2 additional model classes.
+- [ ] Have a one:many relationship that works properly built between 2 of your models.
+- [ ] Successfully save data to each table your models define in at least one view function.
+- [ ] Successfully uery data from each of your models in a view function (so query at least one column, or all data, from every database table you have a model for).
+- [ ] Query data using an `.all()` method in at least one view function and send the results of that query to a template.
+- [ ] Include at least one use of `redirect`.
+- [ ] Include at least one use of `url_for`.
+- [ ] Have at least 3 additional view functions that are not included with the code we have provided. (But you may have more! *Make sure you include ALL view functions in the app in the documentation and ALL pages in the app in the navigation links of `base.html`.*)
 
 ### Additional Requirements for an additional 200 points (to reach 100%) -- an app with extra functionality!
 
