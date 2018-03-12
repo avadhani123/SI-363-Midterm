@@ -1,0 +1,11 @@
+{% block content %}
+  <h1>Thanks for entering your favorite movie</h1>
+  <form method="POST" action="http://localhost:5000/wtfresult">
+      {{ form.hidden_tag() }}
+      {% for message in get_flashed_messages() %}
+      {{ message }}
+      {% endfor %}
+      <p>{{ form.name.label }}{{ form.name() }}</p>
+      {{ form.submit() }}
+  </form>
+{% endblock %}

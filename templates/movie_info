@@ -1,0 +1,18 @@
+
+
+{% if movies %}
+Thanks for entering a movie!
+
+{% else %}
+Please enter something into the movie field!
+
+{% endif %}
+
+    {% for r in movies[:1] %}
+        <h1> Movie: {{ r['trackName'] }}</h1>
+        <h2> Description: </h2> <p> {{ r['longDescription']}} </p>
+        <br>
+        <h3> Genre: </h3> <p> {{r['primaryGenreName']}} </p>
+        <br>
+        <h3> Watch the preview <a href="{{ r['previewUrl'] }}"> here</a>.</h3>
+    {% endfor %}
